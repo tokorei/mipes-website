@@ -30,6 +30,8 @@ Object.assign(zh, {
  'Training participant using an instrumented accessory':'使用训练配套装备的参训人员',
  'Participant training with supporting equipment':'使用配套装备训练的参训人员',
  'Footer navigation':'页脚导航',
+ 'MIPES product advantages':'MIPES 产品优势',
+ 'Personnel and vehicles in a coordinated field training exercise':'野外协同训练中的人员与车辆',
  'Tracked ARTS target systems moving through outdoor terrain':'在户外地形移动的 ARTS 履带式靶标',
  'ARTS target showing a forward-leaning posture':'呈现前倾姿态的 ARTS 靶标',
  'Manufacturing and engineering equipment':'制造与工程设备',
@@ -42,6 +44,44 @@ Object.assign(zh, {
  'MIPES — Multidomain Integrated Posture Engagement System':'MIPES — 多域姿态交战系统',
  'Your name':'姓名','Organisation':'机构','Email':'电子邮箱',
  'Who will train, and where?':'参训人员是谁？训练地点在哪里？'
+});
+Object.assign(zh, {
+ 'Request brochure':'申请产品画册',
+ 'Request product brochure':'申请产品画册',
+ 'PRODUCT BROCHURE / REQUEST':'产品画册 / 申请',
+ 'Get the product story.':'了解产品全貌。',
+ 'Then explore the details.':'再深入探索细节。',
+ 'Answer a few questions so the sales team can send the detailed brochure that fits your interests. Once your request is sent, you can download a concise product summary immediately.':'回答几个问题，销售团队便可根据您的兴趣发送详细画册。申请成功提交后，您可立即下载简明产品概览。',
+ 'Tell us your training needs':'告诉我们您的训练需求',
+ 'Share your contact details and areas of interest.':'提供联系方式及感兴趣的产品。',
+ 'Download the summary':'下载产品概览',
+ 'Get an immediate overview of MIPES, ARTS, and accessories.':'立即了解 MIPES、ARTS 及配套产品。',
+ 'Hear from sales':'销售团队后续联系',
+ 'The detailed brochure will be sent separately by the sales team.':'详细画册将由销售团队另行发送。',
+ 'Request the brochure':'申请产品画册',
+ 'Fields marked * are required.':'标有 * 的字段为必填项。',
+ 'Full name *':'姓名 *','Organisation *':'机构 *','Work email *':'工作邮箱 *','Phone':'电话','Country or region *':'国家或地区 *','Expected participants':'预计参训人数',
+ 'Products of interest *':'感兴趣的产品 *',
+ 'What would you like to achieve? *':'您希望达成什么训练目标？ *',
+ 'I agree to be contacted about this request and understand that the detailed brochure will be sent by the sales team.':'我同意销售团队就此次申请与我联系，并了解详细画册将由销售团队另行发送。',
+ 'Send request & download summary':'提交申请并下载概览',
+ 'Request received.':'申请已收到。',
+ 'Your summary is ready. The sales team will send the detailed brochure separately.':'产品概览已可下载。销售团队将另行发送详细画册。',
+ 'Download product summary PDF ↗':'下载产品概览 PDF ↗',
+ 'Product brochure request questionnaire':'产品画册申请问答表',
+ 'Your full name':'您的姓名','Organisation name':'机构名称','Optional contact number':'可选联系电话','Country or region':'国家或地区','Select a range':'请选择范围','Under 100':'少于 100 人','100–999':'100–999 人','1,000 or more':'1,000 人或以上','To be discussed':'待讨论',
+ 'Tell us about your exercise or training goals':'请说明您的演训或训练目标'
+});
+Object.assign(zh, {
+ 'Answer a few questions to prepare an email request for the detailed brochure. Open the draft, add your MIPES sales contact, and send it from your email app. A concise product summary is available immediately after you prepare the draft.':'回答几个问题，即可生成详细画册申请邮件。请打开草稿，添加您的 MIPES 销售联系人，并从邮件应用发送。草稿准备好后即可下载简明产品概览。',
+ 'Open your email draft':'打开邮件草稿',
+ 'Add your MIPES sales contact and send the request.':'添加您的 MIPES 销售联系人并发送申请。',
+ 'Get an immediate overview. Sales will send the detailed brochure after receiving your email.':'立即下载产品概览。销售团队收到邮件后将发送详细画册。',
+ 'I agree to include these details in my email request and understand that the sales team will send the detailed brochure after receiving it.':'我同意将这些资料写入申请邮件，并了解销售团队收到邮件后才会发送详细画册。',
+ 'Prepare email draft & summary':'准备邮件草稿与概览',
+ 'Email draft ready.':'邮件草稿已备妥。',
+ 'Open the draft in your email app, add your MIPES sales contact, and send it. The sales team will send the detailed brochure after receiving your request.':'请在邮件应用中打开草稿，添加您的 MIPES 销售联系人后发送。销售团队收到申请后将发送详细画册。',
+ 'Open email draft ↗':'打开邮件草稿 ↗'
 });
 const translatableAttributes=['placeholder','aria-label','alt','title','content'];
 const originalNodes=[];
