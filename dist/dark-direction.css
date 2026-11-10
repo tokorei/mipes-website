@@ -237,3 +237,4 @@ html[data-language="zh"] .hero h1{font-size:clamp(64px,7.8vw,132px);line-height:
 html[data-language="zh"] .desktop-nav a{letter-spacing:0}
 html[data-language="zh"] .process-card h3{font-size:clamp(24px,2.4vw,32px)}
 @media(max-width:600px){html[data-language="zh"] .hero h1{font-size:clamp(55px,11vw,80px)}}
+.home-products-actions{display:flex;gap:25px;flex-wrap:wrap}.home-products-actions a{color:#f5f7f3;border-bottom:1px solid #a7b38a;padding-bottom:7px}
