@@ -83,6 +83,16 @@ Object.assign(zh, {
  'Open the draft in your email app, add your MIPES sales contact, and send it. The sales team will send the detailed brochure after receiving your request.':'请在邮件应用中打开草稿，添加您的 MIPES 销售联系人后发送。销售团队收到申请后将发送详细画册。',
  'Open email draft ↗':'打开邮件草稿 ↗'
 });
+Object.assign(zh, {
+ 'Test the brochure request questionnaire and download a concise product summary. This test does not send, receive, or save contact details. When the live request process is enabled, the detailed brochure will be sent by the sales team.':'测试产品画册申请问答表，并下载简明产品概览。本测试不会发送、接收或保存联系方式。正式申请流程启用后，详细画册将由销售团队发送。',
+ 'Preview the request':'预览申请',
+ 'Your answers stay in this browser during the test.':'测试期间，您的答案只留在此浏览器中。',
+ 'Get an immediate overview. Sales will send the detailed brochure when the live request process is enabled.':'立即获取产品概览。正式申请流程启用后，销售团队将发送详细画册。',
+ 'I understand this is a test: my details will not be sent or saved. Sales will send the detailed brochure when the live request process is enabled.':'我了解这是测试：我的资料不会被发送或保存。正式申请流程启用后，详细画册将由销售团队发送。',
+ 'Preview request & get summary':'预览申请并获取概览',
+ 'Test preview complete.':'测试预览已完成。',
+ 'No details were sent, received, or saved. Download the summary below. The detailed brochure will be sent by sales when the live request process is enabled.':'资料未被发送、接收或保存。请在下方下载产品概览。正式申请流程启用后，详细画册将由销售团队发送。'
+});
 const translatableAttributes=['placeholder','aria-label','alt','title','content'];
 const originalNodes=[];
 const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
