@@ -204,3 +204,15 @@ body{background:#0D1A20;color:var(--ink)}
 @media(max-width:900px){.home-product-grid{grid-template-columns:1fr 1fr}.home-product-card:last-child{grid-column:1/-1}.home-product-card:last-child{display:grid;grid-template-columns:1fr 1fr}.home-product-card:last-child .home-product-image{height:100%}.home-products-heading{grid-template-columns:1fr;gap:25px}}
 @media(max-width:600px){.home-product-grid{grid-template-columns:1fr}.home-product-card:last-child{display:block;grid-column:auto}.home-product-card:last-child .home-product-image{height:270px}.home-product-image{height:270px}.home-product-content{min-height:0;padding:25px}.home-products-foot{display:grid;gap:18px}}
 @media(prefers-reduced-motion:reduce){.home-product-image:after{animation:none}.home-product-card,.home-product-image img{transition:none}}
+
+/* How it works field visual */
+.system-visual{position:relative;overflow:hidden;margin:62px 0 0;min-height:clamp(330px,39vw,610px);border:1px solid #52695b;background:#122527;isolation:isolate}
+.system-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%;filter:saturate(.62) brightness(.74);transform:scale(1.015);animation:systemFieldDrift 20s ease-in-out infinite alternate}
+.system-visual:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(10,24,25,.84) 0%,rgba(10,24,25,.44) 37%,transparent 75%),linear-gradient(0deg,rgba(10,24,25,.62),transparent 38%)}
+.system-visual:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;border:1px solid rgba(185,205,170,.25);box-shadow:inset 0 0 95px rgba(12,27,25,.35);background:linear-gradient(110deg,transparent 26%,rgba(217,235,207,.07) 50%,transparent 74%);background-size:220% 100%;animation:homeProductLight 16s ease-in-out infinite alternate}
+.system-visual figcaption{position:absolute;left:clamp(25px,4vw,70px);bottom:clamp(28px,4vw,70px);z-index:3;display:grid;gap:18px;color:#f5f7f3;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.system-visual figcaption span{color:#cbd9c2;font:12px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.15em}
+.system-visual figcaption strong{font-size:clamp(32px,4.2vw,66px);font-weight:500;line-height:1.05;letter-spacing:-.055em}
+@keyframes systemFieldDrift{to{transform:scale(1.055) translateX(-.5%)}}
+@media(max-width:600px){.system-visual{margin-top:40px;min-height:390px}.system-visual img{object-position:35% center}.system-visual:before{background:linear-gradient(0deg,rgba(10,24,25,.78),rgba(10,24,25,.05) 75%)}}
+@media(prefers-reduced-motion:reduce){.system-visual img,.system-visual:after{animation:none}}
