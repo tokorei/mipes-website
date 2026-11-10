@@ -12,3 +12,5 @@
 - No new logo artwork or modified mark was created in this update.
 
 New logo artwork or variations still require separate user review and approval.
+
+**2026-11-10 mobile update:** The footer now uses the exact same round M asset and matching icon size, type size, and spacing as the header on both pages. The logo auditor found no asset mismatch, clipping, or distortion. The earlier printed-guideline governance note above still applies.

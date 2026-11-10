@@ -246,3 +246,12 @@ html[data-language="zh"] .process-card h3{font-size:clamp(24px,2.4vw,32px)}
 .footer-brand img{display:block;width:70px;height:70px;max-width:none;flex:none}
 .footer-brand span{font-size:clamp(28px,2.5vw,38px);line-height:1;font-weight:700;letter-spacing:.12em}
 @media(max-width:520px){.footer-brand{width:auto;height:auto}.footer-brand img{width:58px;height:58px}.footer-brand span{font-size:27px}.footer-main{gap:44px}.footer-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+
+/* Keep mobile navigation operable at any scroll position without page reflow. */
+@media(max-width:1050px){.mobile-menu{position:fixed;left:0;right:0;top:76px;max-height:calc(100dvh - 76px);overflow-y:auto;overscroll-behavior:contain;z-index:19}.menu-button{min-width:44px;min-height:44px}}
+@media(max-width:520px){.mobile-menu{top:72px;max-height:calc(100dvh - 72px)}}
+/* Footer uses the same mark, type scale and spacing as the header. */
+.footer-brand,.footer-brand:link,.footer-brand:visited{gap:13px}
+.footer-brand img{width:48px;height:48px}
+.footer-brand span{font-size:20px;letter-spacing:.12em}
+@media(max-width:520px){.footer-brand img{width:42px;height:42px}.footer-brand span{font-size:18px}}
