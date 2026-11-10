@@ -2,12 +2,13 @@
 
 **Date:** 2026-11-10
 
-**Source:** Supplied MIPES logo artwork
+**Source:** Supplied MIPES logo artwork and selected round M asset
 
 **Reviewer:** Independent logo audit agent
 
-- Header: the round M SVG remains source-faithful and fully visible at desktop and mobile sizes. Adjacent “MIPES” text reads as a new composite lockup and remains pending user approval as a logo variation.
-- Footer: the supplied reversed master is complete, proportionate, and legible on a black background with no visible seam.
-- Favicon: source round M badge.
+- The source-faithful round M SVG is used consistently as the favicon and in both headers and footers. It is complete and legible at desktop and mobile sizes.
+- Plain “MIPES” text next to the badge identifies the product. This follows the website header direction to show the full name with the selected M mark; the footer now uses the same treatment.
+- The older logo guideline draft recommends the full supplied lockup elsewhere in the experience. The user's later website direction selected the M-only mark and rejected the previous footer logo. The website follows that later direction; the printed guideline draft should be revised before being treated as final for this application.
+- No new logo artwork or modified mark was created in this update.
 
-Each new logo placement or variation requires review; logo variations require user approval.
+New logo artwork or variations still require separate user review and approval.
