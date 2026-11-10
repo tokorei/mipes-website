@@ -1,33 +1,41 @@
 const menuButton=document.getElementById('menuButton');
 const mobileMenu=document.getElementById('mobileMenu');
-function closeMenu(returnFocus=false){mobileMenu.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu');if(returnFocus)menuButton.focus();}
-menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';if(open){closeMenu();return;}mobileMenu.hidden=false;menuButton.setAttribute('aria-expanded','true');menuButton.setAttribute('aria-label','Close menu');mobileMenu.querySelector('a')?.focus();});
-mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{const target=document.querySelector(link.getAttribute('href'));closeMenu();if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}}));
+function closeMenu(returnFocus=false){mobileMenu.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label',document.documentElement.lang==='zh-Hans'?'打开菜单':'Open menu');if(returnFocus)menuButton.focus();}
+menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';if(open){closeMenu();return;}mobileMenu.hidden=false;menuButton.setAttribute('aria-expanded','true');menuButton.setAttribute('aria-label',document.documentElement.lang==='zh-Hans'?'关闭菜单':'Close menu');mobileMenu.querySelector('a')?.focus();});
+mobileMenu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{const target=document.querySelector(link.getAttribute('href'));closeMenu();if(target){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}}));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!mobileMenu.hidden)closeMenu(true);});
 document.addEventListener('pointerdown',event=>{if(!mobileMenu.hidden&&!mobileMenu.contains(event.target)&&!menuButton.contains(event.target))closeMenu();});
-document.getElementById('year').textContent=new Date().getFullYear();
+if(document.getElementById('year'))document.getElementById('year').textContent=new Date().getFullYear();
 const briefingForm=document.getElementById('briefingForm');
 const copyStatus=document.getElementById('copyStatus');
-briefingForm.addEventListener('submit',async event=>{
+briefingForm?.addEventListener('submit',async event=>{
  event.preventDefault();
  if(!briefingForm.reportValidity())return;
  const details=new FormData(briefingForm);
  const value=name=>String(details.get(name)||'').trim();
- const request=[
-  'MIPES private briefing request',
-  '',
+ const chinese=document.documentElement.lang==='zh-Hans';
+ const request=(chinese?[
+  'MIPES 专属产品介绍需求','',
+  `姓名：${value('name')}`,
+  `机构：${value('organisation')}`,
+  `电子邮箱：${value('email')}`,
+  `训练目标：${value('objective')}`,
+  `参训人员与环境：${value('participants')||'待讨论'}`,
+  `希望介绍的时间：${value('timing')||'待安排'}`
+ ]:[
+  'MIPES private briefing request','',
   `Name: ${value('name')}`,
   `Organisation: ${value('organisation')}`,
   `Email: ${value('email')}`,
   `Training objective: ${value('objective')}`,
   `Participants and environment: ${value('participants')||'To be discussed'}`,
   `Preferred briefing time: ${value('timing')||'To be arranged'}`
- ].join('\n');
+ ]).join('\n');
  try{
   await navigator.clipboard.writeText(request);
-  copyStatus.textContent='Briefing request copied. Send it to your MIPES representative.';
+  copyStatus.textContent=document.documentElement.lang==='zh-Hans'?'介绍需求已复制，请发送给 MIPES 代表。':'Briefing request copied. Send it to your MIPES representative.';
  }catch{
-  copyStatus.textContent='Copy unavailable in this browser. Please copy your details manually.';
+  copyStatus.textContent=document.documentElement.lang==='zh-Hans'?'此浏览器无法复制，请手动复制填写的信息。':'Copy unavailable in this browser. Please copy your details manually.';
  }
 });
 
