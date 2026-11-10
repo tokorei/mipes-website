@@ -109,7 +109,7 @@ const titleEnglish=document.title;const description=document.querySelector('meta
 const descriptionEnglish=description?.content||'';
 const switchButton=document.createElement('button');
 switchButton.type='button';switchButton.className='language-switch';switchButton.setAttribute('aria-label','Switch language');
-const header=document.querySelector('.site-header');header?.insertBefore(switchButton,header.querySelector('.menu-button'));
+const headerActions=document.querySelector('.site-header .header-actions');headerActions?.prepend(switchButton);
 function setLanguage(language,remember=false){
  const chinese=language==='zh';document.documentElement.lang=chinese?'zh-Hans':'en';
  document.documentElement.dataset.language=chinese?'zh':'en';
