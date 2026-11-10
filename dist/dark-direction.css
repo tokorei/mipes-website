@@ -216,3 +216,10 @@ body{background:#0D1A20;color:var(--ink)}
 @keyframes systemFieldDrift{to{transform:scale(1.055) translateX(-.5%)}}
 @media(max-width:600px){.system-visual{margin-top:40px;min-height:390px}.system-visual img{object-position:35% center}.system-visual:before{background:linear-gradient(0deg,rgba(10,24,25,.78),rgba(10,24,25,.05) 75%)}}
 @media(prefers-reduced-motion:reduce){.system-visual img,.system-visual:after{animation:none}}
+
+/* Full-width field visual in Section 2 */
+.system-visual{width:100vw;max-width:none;margin-left:calc(50% - 50vw);border-left:0;border-right:0;min-height:clamp(430px,47vw,740px)}
+.system-visual:before{background:linear-gradient(0deg,#172b2d 0%,rgba(23,43,45,.58) 12%,transparent 34%),linear-gradient(90deg,rgba(10,24,25,.62),transparent 50%)}
+.system-visual figcaption{left:max(40px,calc((100vw - 1500px)/2));bottom:clamp(48px,6vw,95px)}
+@media(max-width:800px){.system-visual figcaption{left:20px;right:20px}}
+@media(max-width:600px){.system-visual{min-height:480px}.system-visual figcaption{left:20px;right:20px;bottom:55px}}
